@@ -1,0 +1,9 @@
+{
+	"id": "vim-title-edit",
+	"name": "Vim Title Edit",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Navigate to file title with Vim keybindings - press k at line 1 to edit title",
+	"author": "Your Name",
+	"isDesktopOnly": false
+}

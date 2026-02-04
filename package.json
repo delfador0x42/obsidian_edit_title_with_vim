@@ -1,0 +1,23 @@
+{
+	"name": "vim-title-edit",
+	"version": "1.0.0",
+	"description": "Navigate to and edit file titles with Vim keybindings in Obsidian",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"deploy": "npm run build && rm -rf /Users/tal/archivum-aeternum/.obsidian/plugins/vim-title-edit && mkdir -p /Users/tal/archivum-aeternum/.obsidian/plugins/vim-title-edit && cp main.js manifest.json styles.css /Users/tal/archivum-aeternum/.obsidian/plugins/vim-title-edit/"
+	},
+	"keywords": ["obsidian", "vim", "title"],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^16.11.6",
+		"esbuild": "0.25.5",
+		"tslib": "2.4.0",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"obsidian": "latest"
+	}
+}
